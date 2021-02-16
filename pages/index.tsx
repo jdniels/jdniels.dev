@@ -36,7 +36,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-      <p>{process.env.ANALYTICS_ID}</p>
+      <p>TEST ADA GK?{process.env.ANALYTICS_ID}</p>
     </Layout>
   );
 }
