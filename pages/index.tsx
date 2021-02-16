@@ -36,6 +36,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <p>{process.env.ANALYTICS_ID}</p>
     </Layout>
   );
 }
