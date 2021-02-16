@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "jdnielss.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,16 @@
     "start": "next start",
     "format": "prettier --write \"components/**/*.tsx\" \"lib/**/*.tsx\" \"pages/**/*.tsx\"",
     "lint": "eslint \"{components,lib,pages,posts}/**/*.ts\" --fix"
+  },
+  "contributors": [
+    {
+      "name": "Juan Daniel",
+      "email": "jdniels99@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdniels/jdnielss.dev"
   },
   "husky": {
     "hooks": {
