@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -11,12 +21,10 @@
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "module": "esnext",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "isolatedModules": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "esModuleInterop": true
+    "jsx": "preserve"
   },
   "exclude": [
     "node_modules"
