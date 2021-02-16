@@ -1,7 +1,7 @@
 export default function Analytics() {
   return (
     <>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RZVLLRQ7X"></script>
+      <script async src={process.env.URL_ANALYTICS} />
       <script
         dangerouslySetInnerHTML={{
           __html: `
@@ -9,10 +9,10 @@ export default function Analytics() {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', 'G-4RZVLLRQ7X');
+                gtag('config', '${process.env.ANALYTICS_ID}');
                 `,
         }}
-      ></script>
+      />
     </>
   );
 }
